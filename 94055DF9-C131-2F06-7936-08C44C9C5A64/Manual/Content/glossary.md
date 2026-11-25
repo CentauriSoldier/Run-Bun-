@@ -86,6 +86,11 @@ A card played in response to an event. For example, Panic responds to a Chase ta
 
 An effect that sends a Chase toward a different Bun.
 
+<!-- section: glossary-roaming; source: 0 -->
+### Roaming
+
+A Bun that is active in play and has not burrowed, whether face up or face down.
+
 <!-- section: glossary-sniff; source: 0 -->
 ### Sniff
 

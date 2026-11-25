@@ -2,6 +2,7 @@ Cover
 intro
 one-minute-teach
 card-types
+effects
 what-you-need
 setup
 start-playing
