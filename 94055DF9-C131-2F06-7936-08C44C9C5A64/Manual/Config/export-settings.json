@@ -1,0 +1,14 @@
+{
+  "pdf":{
+    "units":"in",
+    "marginTop":0.125,
+    "marginOutside":0.125,
+    "dpi":300,
+    "width":5.375,
+    "height":8.375,
+    "marginInside":0.625,
+    "marginBottom":0.125,
+    "preset":"DigestPerfectBoundBook",
+    "bleed":0.1875
+  }
+}
