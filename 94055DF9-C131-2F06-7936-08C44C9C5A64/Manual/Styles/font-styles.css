@@ -81,6 +81,54 @@
 }
 .font-chasename[data-inline] { font-size: inherit; }
 
+/* style: CUNNING */
+.font-cunning {
+	font-family: "Almendra", sans-serif;
+	font-size: 22pt;
+	font-weight: 700;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(28,18,12,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0 transparent;
+	paint-order: stroke fill;
+}
+.font-cunning[data-inline] { font-size: inherit; }
+
+/* style: CUNNINGBUN */
+.font-cunningbun {
+	font-family: "Almendra", sans-serif;
+	font-size: 22pt;
+	font-weight: 700;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(100,57,18,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0 transparent;
+	paint-order: stroke fill;
+}
+.font-cunningbun[data-inline] { font-size: inherit; }
+
+/* style: CUNNINGDOG */
+.font-cunningdog {
+	font-family: "Almendra", sans-serif;
+	font-size: 22pt;
+	font-weight: 700;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(112,24,30,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0 transparent;
+	paint-order: stroke fill;
+}
+.font-cunningdog[data-inline] { font-size: inherit; }
+
 /* style: DOGNAME */
 .font-dogname {
 	font-family: "Madjoe", sans-serif;
@@ -249,8 +297,8 @@
 }
 .font-ruler[data-inline] { font-size: inherit; }
 
-/* style: SNIFFNAME */
-.font-sniffname {
+/* style: PROWLNAME */
+.font-prowlname {
 	font-family: "Trade Winds", sans-serif;
 	font-size: 38pt;
 	font-weight: 400;
@@ -267,7 +315,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.font-sniffname[data-inline] { font-size: inherit; }
+.font-prowlname[data-inline] { font-size: inherit; }
 
 /* style: STARTLENAME */
 .font-startlename {

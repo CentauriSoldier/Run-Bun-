@@ -249,8 +249,8 @@
 }
 .font-ruler[data-inline] { font-size: inherit; }
 
-/* style: SNIFFNAME */
-.font-sniffname {
+/* style: PROWLNAME */
+.font-prowlname {
 	font-family: "Trade Winds", sans-serif;
 	font-size: 38pt;
 	font-weight: 400;
@@ -267,7 +267,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.font-sniffname[data-inline] { font-size: inherit; }
+.font-prowlname[data-inline] { font-size: inherit; }
 
 /* style: STARTLENAME */
 .font-startlename {

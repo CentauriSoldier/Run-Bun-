@@ -54,6 +54,59 @@ Keep important details away from the rounded corners and decorative frame overla
 
 For all card-frame generation and editing, include at least one pair of different decorative objects on opposite sides of the artwork opening, aligned at the same vertical height. The left-side object must differ from its right-side counterpart; for example, a lever on one side and a pressure gauge on the other. Other paired elements, such as springs, may remain matching and aligned. This rule applies to every card type, not just Panic.
 
+### Frame ornament clearance
+
+Keep the artwork viewport comparable in size to the established frames.
+Side ornaments may overlap its edge slightly, but must stay compact and
+must not intrude deeply into the artwork or conceal important scene detail.
+Keep different left and right ornaments aligned at the same vertical height.
+Top ornaments may overlap the name panel slightly, but must leave the full
+usable title area clear and readable; do not hang a large crest down into
+the card name. Inspect these clearances before installing a frame.
+For print artwork, keep logos and other essential details inside the safe
+area, inward of the trim line; bleed is expendable background, not a safe
+place for a logo. Extend the outer background through the bleed.
+
+### Deck-back composition inside the shared border
+
+Do not use felt, velvet, fuzzy fabric or fur-like background surfaces on
+deck backs. Preserve character fur, but use hard metal, enamel or the
+approved Survival parchment for the background. Use Aisling as the Bun
+back character reference and Harrow as the Dog back character reference.
+The shared silver border is the only outer border: do not add a smaller
+oval rim, raised insert edge or plain spacer band inside it. Carry the
+background continuously to the silver bevel and compose the ornament
+to fit that opening, rather than shrinking a separate oval into it.
+
+Compose each deck back for the actual oval opening in the approved shared
+Back Border.png. Do not create a rectangular decorative design and merely
+crop it to the oval. Keep chains, scrolls, gears, plaques, emblems and other
+recognizable decorations complete within the visible opening. Chains must
+end at visible attachment points; scrollwork should curve naturally with
+the oval and terminate inside it. Leave a plain background apron around
+the composition that extends underneath the silver bevel, so only that
+background is overlapped. Verify the assembled back for both gaps and
+abruptly cut-off decorations. Preserve the shared border as a separate
+reusable overlay; draw black beneath the deck art and border.
+
+### The Game Crafter poker-card print geometry
+
+The current 825 × 1125 card canvas is the poker-card upload size at 300 DPI,
+including bleed. Finished trim is 750 × 1050 pixels (2.5 × 3.5 inches).
+The trim line is approximately 37.5 pixels inward from each upload edge;
+the safe area is 75 pixels inward from each upload edge. Keep essential
+logos and lettering inside that safe area, with extra clearance where
+practical. Extend background to every upload edge. Thick outer backgrounds
+are preferable to thin edge borders because cutting/registration can drift.
+Keep the shared back border as a transparent overlay, including outside
+its silhouette. Draw a full-bleed black base on the card first, then the
+deck-specific artwork and shared border. The final composite back must be
+opaque. Place the overlay with enough inset to keep the logo inside the
+75-pixel safe area; the native generated asset alone is not a print proof.
+
+Sources: https://www.thegamecrafter.com/developer/TGC.html
+and https://help.thegamecrafter.com/article/39-templates
+
 ## 3. Names, files, and CSV
 
 The image filename must match the CSV Name exactly, including spelling and case. Use the correct image folder and CSV Type for the card type.

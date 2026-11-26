@@ -17,7 +17,7 @@ return function(sObject, D, hDC)
         Nasty   = {X = nWidth * 0.05818182, Y = nHeight * 0.16888889, Width = nWidth * 0.88363636, Height = nHeight * 0.42577778},
         Panic   = {X = nWidth * 0.06303030, Y = nHeight * 0.16888889, Width = nWidth * 0.86909091, Height = nHeight * 0.42755556},
         Startle = {X = nWidth * 0.06787879, Y = nHeight * 0.17955556, Width = nWidth * 0.86545455, Height = nHeight * 0.41600000},
-        Sniff   = {X = nWidth * 0.08000000, Y = nHeight * 0.18133333, Width = nWidth * 0.84242424, Height = nHeight * 0.40711111},
+        Prowl   = {X = nWidth * 0.08000000, Y = nHeight * 0.18133333, Width = nWidth * 0.84242424, Height = nHeight * 0.40711111},
     };
 
     local sType         = tRow.Type;

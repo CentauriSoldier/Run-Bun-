@@ -74,12 +74,12 @@ Nice cards help another player's Bun.
 <!-- section: glossary-panic; source: 0 -->
 ### Panic
 
-A Reaction card you can play when one of your Buns is chased.
+A Reaction card only the chased Bun's owner may play for that Bun, in response to Startle.
 
 <!-- section: glossary-reaction; source: 0 -->
 ### Reaction
 
-A card played in response to an event. For example, Panic responds to a Chase targeting one of your Buns.
+A card played in response to an event. For example, Panic responds to Startle during a Chase against your Bun.
 
 <!-- section: glossary-redirect; source: 0 -->
 ### Redirect
@@ -91,8 +91,39 @@ An effect that sends a Chase toward a different Bun.
 
 A Bun that is active in play and has not burrowed, whether face up or face down.
 
-<!-- section: glossary-sniff; source: 0 -->
-### Sniff
+<!-- section: glossary-scavenge-check; source: 0 -->
+### Scavenge Check
+
+Roll a d20, add the acting Roaming Bun's Scavenge value and the Scavenge
+card's modifier. A total of 16 or higher succeeds. A natural 20 always
+succeeds and a natural 1 always fails, regardless of modifiers.
+Each Roaming Bun provides one independent Scavenge opportunity per Dog turn
+during Preparation. Burrowed Buns do not contribute.
+
+<!-- section: glossary-prowl; source: 0 -->
+### Prowl
 
 A Dog card that reveals Buns. It cannot catch them; catching requires a Chase.
 
+### OLD — earlier Glossary
+
+> **OLD — retained for review, not a replacement for the current rules.**
+>
+> | Term | Meaning |
+> | --- | --- |
+> | **Dog** | The character that pursues the **Buns**, or the player controlling it. |
+> | **Bun** / **Bunny** | Interchangeable terms for a character controlled by a **Bun** player. |
+> | **Brace** | The pair of **Buns** belonging to one player. |
+> | **Burrow** | A section on a **Bun** card. Each escaped **Bun** gives its player up to one play using that section per **Dog** turn. |
+> | **Chase** | A **Dog** card that starts a pursuit. The pursuit itself is called a **Chase**. |
+> | **Lure** | A **Dog** card that baits a **Bun** or sets up a **Chase**. |
+> | **Prowl** | A **Dog** card that reveals **Buns**. It cannot catch them; catching requires a **Chase**. |
+> | **Catch Roll** / **Escape Roll** | The **Dog**’s roll is its **catch roll**. The **Bun**’s opposed roll is its **escape roll**. |
+> | **Nice** / **Nasty** | **Nice** cards help another player's **Bun**. **Nasty** cards make trouble for another player's **Bun**. |
+> | **Panic** | A **Reaction** card you can play when one of your **Buns** is chased. |
+> | **Reaction** | A card played in response to an event. For example, **Panic** responds to a **Chase** targeting one of your **Buns**. |
+> | **Chase Modifier** | The value printed on a **Bun** card that adjusts its **escape roll** in a **Chase**. |
+> | **Redirect** | An effect that sends a **Chase** toward a different **Bun**. |
+> | **Natural Roll** | The number showing on the die before modifiers. |
+> | **Dusk** / **Dawn** | At **Dusk**, score the day. At **Dawn**, reset the **Braces** for the next day. |
+> | **Last Chase** | The roll-off that decides the winner when the **Dog** ties for first. |

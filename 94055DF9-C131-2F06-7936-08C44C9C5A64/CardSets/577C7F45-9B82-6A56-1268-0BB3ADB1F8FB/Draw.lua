@@ -17,7 +17,7 @@ return function(sObject, D, hDC)
         Nasty   = {X = nWidth * 0.05818182, Y = nHeight * 0.16888889, Width = nWidth * 0.88363636, Height = nHeight * 0.42577778},
         Panic   = {X = nWidth * 0.06303030, Y = nHeight * 0.16888889, Width = nWidth * 0.86909091, Height = nHeight * 0.42755556},
         Startle = {X = nWidth * 0.06787879, Y = nHeight * 0.17955556, Width = nWidth * 0.86545455, Height = nHeight * 0.41600000},
-        Sniff   = {X = nWidth * 0.08000000, Y = nHeight * 0.18133333, Width = nWidth * 0.84242424, Height = nHeight * 0.40711111},
+        Prowl   = {X = nWidth * 0.08000000, Y = nHeight * 0.18133333, Width = nWidth * 0.84242424, Height = nHeight * 0.40711111},
         Prep    = {X = nWidth * 0.08848485, Y = nHeight * 0.18400000, Width = nWidth * 0.82424242, Height = nHeight * 0.37866667},
     };
 
@@ -31,8 +31,8 @@ return function(sObject, D, hDC)
         Nasty   = {X = nWidth / 2, Y = nHeight * 0.64000000},
         Panic   = {X = nWidth / 2, Y = nHeight * 0.64444444},
         Startle = {X = nWidth / 2, Y = nHeight * 0.64000000},
-        Sniff   = {X = nWidth / 2, Y = nHeight * 0.64000000},
-        Prep    = {X = nWidth / 2, Y = nHeight * 0.59200000},
+        Prowl   = {X = nWidth / 2, Y = nHeight * 0.64000000},
+        Prep    = {X = nWidth / 2, Y = nHeight * 0.59700000},
     };
 
     local sType         = tRow.Type;
@@ -50,6 +50,11 @@ return function(sObject, D, hDC)
 
     --draw the frame
     Forge.DrawImage(pFrame, 0, 0, nWidth, nHeight);
+
+    --stamp Cunning into the top-center metal plate on Bun and Dog cards
+    if (sType == "Bun" or sType == "Dog") then
+        Forge.DrawText("Cunning"..sType, nWidth / 2, nHeight * 0.02400000, tRow.Cunning or "", true, true);
+    end
 
     --select the inherited Bun name color by sex
     if (sType == "Bun" and (tRow.Sex == "M" or tRow.Sex == "F")) then
@@ -82,6 +87,15 @@ return function(sObject, D, hDC)
     else
         Forge.DrawText("TYPE", tTypePosition.X, tTypePosition.Y, sType:upper(), true, true);
     end
+
+    if type(_tRow.Description) == "table" then
+
+        for k, v in ipairs(_tRow.Description) do
+            Forge.DrawText("TYPE", 415, 800 + k * 30, v, true, true);
+        end
+    end
+
+
 
     --wrap each flavor paragraph inside the lower panel, preserving explicit line breaks
     local sFlavor = tRow.Flavor or "";

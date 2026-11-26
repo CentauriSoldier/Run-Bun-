@@ -433,8 +433,8 @@ body:has(> .manual-section > .section-heading > #dawn) {
 .manual-section:has(> .section-heading > #glossary-chase),
 .manual-section[data-section="glossary-lure"],
 .manual-section:has(> .section-heading > #glossary-lure),
-.manual-section[data-section="glossary-sniff"],
-.manual-section:has(> .section-heading > #glossary-sniff) {
+.manual-section[data-section="glossary-prowl"],
+.manual-section:has(> .section-heading > #glossary-prowl) {
  --rb-frame: url("{{MANUAL_IMAGES}}Appearance/Run%20Bun/Frame%20Dog.png");
  --rb-enamel: #4c2024;
  --rb-enamel-light: #6b3038;

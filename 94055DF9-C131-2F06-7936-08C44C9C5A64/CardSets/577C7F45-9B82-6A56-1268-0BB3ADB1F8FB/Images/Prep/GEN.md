@@ -44,7 +44,7 @@ Mechanical geometry must make sense: cabinet doors and shelter doors pivot on th
 The user approved the first Prep frame preview on 2026-11-23.
 
 - Installed asset: ../Components/Frame Prep.png, 825 × 1125 PNG.
-- Theme: a Bun's emergency supply locker, distinct from Sniff's ornate spy-and-gourmet frame.
+- Theme: a Bun's emergency supply locker, distinct from Prowl's ornate spy-and-gourmet frame.
 - Palette: deep petrol-teal enamel, brushed copper, warm ivory writing panels, and oxblood leather straps.
 - Top: carrot-shaped copper latch on a reinforced lid.
 - Left of artwork: compact brass-and-wood sidearm rack and rolled map.
@@ -55,7 +55,7 @@ The user approved the first Prep frame preview on 2026-11-23.
 
 The generated original is archived at ../Components/Backups/Prep Frame Previews/Frame Prep Original 01.png and remains at its generated source location. The installed frame was scaled proportionally onto an 825 × 1125 transparent canvas; center alpha was checked as zero.
 
-Measured transparent opening in this frame: the center column spans approximately Y 209–630; ordinary side edges are around X 75–750, with side decorations intruding locally. These are observations, not yet configured artwork bounds. Measure and confirm the actual frame before choosing the final crop rectangle and scene PNG dimensions. Do not copy Sniff's bounds blindly.
+Measured transparent opening in this frame: the center column spans approximately Y 209–630; ordinary side edges are around X 75–750, with side decorations intruding locally. These are observations, not yet configured artwork bounds. Measure and confirm the actual frame before choosing the final crop rectangle and scene PNG dimensions. Do not copy Prowl's bounds blindly.
 
 ## 6. Integration status and production
 

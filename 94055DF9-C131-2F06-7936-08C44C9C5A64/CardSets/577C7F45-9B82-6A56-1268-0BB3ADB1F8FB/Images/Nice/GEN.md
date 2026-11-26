@@ -38,7 +38,7 @@ Use Images/Nice/Name.png and CSV Type Nice, one matching row per installed image
 | Over Here, Ugly! | Bun on secure iron balcony clangs saucepan to divert Dog from companions crossing courtyard below. |
 | Make a Little Room | Buns move crates aside inside cramped refuge and reach out to welcome another arrival before closing door. |
 | The Long Reach | Ferryman hooks floating platform, pulling stranded Bun away from Dog on bank; hook catches platform, not Bun. |
-| Out of Scent | Perfumer sprays toward sniffing Dog while companion slips behind wall; crisp droplets and recoiling nose explain distraction. |
+| Out of Scent | Perfumer sprays toward prowling Dog while companion slips behind wall; crisp droplets and recoiling nose explain distraction. |
 | Safe Landing | Two Buns stretch sturdy canvas to catch companion jumping from low shed roof as Dog breaks through roof access. |
 | A Bridge Between Friends | Bun slides stout plank across broken walkway and braces it while companion crosses above Dog's reach. |
 | Quiet as a Mouse | Bun steadies jingling tools on companion's belt while both tiptoe behind dozing Dog. |

@@ -1,4 +1,4 @@
-# Run Bun! — Sniff artwork generation and editing protocol
+# Run Bun! — Prowl artwork generation and editing protocol
 
 ## 1. References and scope
 
@@ -8,9 +8,9 @@ This guide records the user's direction and completed production. It does not au
 
 ## 2. Gameplay and scene purpose
 
-Sniff belongs to the Dog's Havoc action deck. Sniff reveals face-down Buns; it cannot catch them. Catching requires a Chase. Do not invent additional effects, numbers, or targeting rules from an illustration.
+Prowl belongs to the Dog's Havoc action deck. Prowl reveals face-down Buns; it cannot catch them. Catching requires a Chase. Do not invent additional effects, numbers, or targeting rules from an illustration.
 
-Dogs are scouting the city for the best-tasting, yummiest Buns while Buns go about everyday life. Dogs sneak, observe, sniff, or pretend to perform ordinary work. Buns remain oblivious and accept unconvincing disguises. The humor comes from the contrast between a plainly dangerous predator and unsuspecting Buns, not from making Buns ugly.
+Dogs are scouting the city for the best-tasting, yummiest Buns while Buns go about everyday life. Dogs sneak, observe, prowl, or pretend to perform ordinary work. Buns remain oblivious and accept unconvincing disguises. The humor comes from the contrast between a plainly dangerous predator and unsuspecting Buns, not from making Buns ugly.
 
 Show a readable cover activity and covert attention to the Bun. A hat alone does not establish sneaking. Avoid a Dog openly looming nose-to-nose with its target, attacking, chasing, or catching it. This is not Startle. A cover task may involve serving, cleaning, inspecting, commuting, collecting taxes, or attending an event; vary the activity and composition.
 
@@ -45,15 +45,15 @@ Preserve approved details during narrow edits, retain every revision, and compar
 
 ## 6. Frame and installation
 
-- Installed frame: ../Components/Frame Sniff.png, 825 × 1125 PNG with transparent artwork opening.
+- Installed frame: ../Components/Frame Prowl.png, 825 × 1125 PNG with transparent artwork opening.
 - Approved design: burgundy enamel, ivory panels and ornate gold/brass; nose at top, peeking eye over a menu on the left, spyglass on the right at the same vertical height, modest intrusion, city details, fork and spoon below, steaming baked bun at bottom, only two pawprints.
 - The menu must protrude a little; neither menu nor spyglass should dominate the opening. No pressure regulator or horn ornaments.
 - Active Draw.lua bounds at 825 × 1125: X 66, Y 204, width 695, height 458.
 - Installed scene PNGs: 1390 × 916, twice the artwork bounds. Scale proportionally with only slight necessary cropping; never stretch width and height independently.
-- Scene path: Images/Sniff/<Name>.png. CSV Type: Sniff. Exact spelling and case must match Name, including Café Stakeout's accent and Chef's Recommendation's apostrophe.
-- Name style: SNIFFNAME in the project Styles.ini. Frame, artwork bounds, and name style are installed. Any future code/style edits require file-specific permission.
-- Current CSV fields: Name,Type,Description,Flavor,Sex,Tags. Preserve all fields and existing content. The new Sniff rows were installed with the other fields blank.
-- Special Delivery already names another card; this Sniff artwork was renamed Parcel Inspection with the user's approval. Check names against the entire CSV before installation.
+- Scene path: Images/Prowl/<Name>.png. CSV Type: Prowl. Exact spelling and case must match Name, including Café Stakeout's accent and Chef's Recommendation's apostrophe.
+- Name style: PROWLNAME in the project Styles.ini. Frame, artwork bounds, and name style are installed. Any future code/style edits require file-specific permission.
+- Current CSV fields: Name,Type,Description,Flavor,Sex,Tags. Preserve all fields and existing content. The new Prowl rows were installed with the other fields blank.
+- Special Delivery already names another card; this Prowl artwork was renamed Parcel Inspection with the user's approval. Check names against the entire CSV before installation.
 
 ## 7. Installed roster
 
@@ -75,8 +75,8 @@ Preserve approved details during narrow edits, retain every revision, and compar
 
 ## 8. Preservation and verification
 
-All 15 scene PNGs and their unique matching Sniff rows were installed. All 15 images decoded at 1390 × 916; CSV consistency and diff checks passed. In-Studio visual appearance has not been verified.
+All 15 scene PNGs and their unique matching Prowl rows were installed. All 15 images decoded at 1390 × 916; CSV consistency and diff checks passed. In-Studio visual appearance has not been verified.
 
-Original generated outputs remain under the Codex generated-images directory. Project archives are in Resize/Initial Previews, Resize/Second Three Previews, and Resize/Completion Sources. The completion archive includes earlier revisions; these are not all approved references. Frame revisions are in ../Components/Backups/Sniff Frame Previews 20261123. CSV backups are under the set's Backups directory, including Before Three Sniff Cards, Before Second Three Sniff, Before Sniff Completion, and Before Final Three Sniff folders.
+Original generated outputs remain under the Codex generated-images directory. Project archives are in Resize/Initial Previews, Resize/Second Three Previews, and Resize/Completion Sources. The completion archive includes earlier revisions; these are not all approved references. Frame revisions are in ../Components/Backups/Prowl Frame Previews 20261123. CSV backups are under the set's Backups directory, including Before Three Prowl Cards, Before Second Three Prowl, Before Prowl Completion, and Before Final Three Prowl folders.
 
 Follow the shared backup and immediate matching-row workflow for authorized additions. Preserve working images and previous revisions; never replace the CSV with an older backup.

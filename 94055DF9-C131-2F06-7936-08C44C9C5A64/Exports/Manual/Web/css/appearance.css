@@ -344,7 +344,7 @@
 .manual-appearance:has([data-chapter="dawn"]:not([hidden])),.manual-appearance:has(> .manual-section > .section-heading > #dawn){
  background-image: url("../content-images/Appearance/Run%20Bun/Background%20Bun.png");
 }
-.manual-appearance .manual-section[data-section="dog-turn"],.manual-appearance .manual-section:has(> .section-heading > #dog-turn),.manual-appearance .manual-section[data-section="glossary-dog"],.manual-appearance .manual-section:has(> .section-heading > #glossary-dog),.manual-appearance .manual-section[data-section="glossary-chase"],.manual-appearance .manual-section:has(> .section-heading > #glossary-chase),.manual-appearance .manual-section[data-section="glossary-lure"],.manual-appearance .manual-section:has(> .section-heading > #glossary-lure),.manual-appearance .manual-section[data-section="glossary-sniff"],.manual-appearance .manual-section:has(> .section-heading > #glossary-sniff){
+.manual-appearance .manual-section[data-section="dog-turn"],.manual-appearance .manual-section:has(> .section-heading > #dog-turn),.manual-appearance .manual-section[data-section="glossary-dog"],.manual-appearance .manual-section:has(> .section-heading > #glossary-dog),.manual-appearance .manual-section[data-section="glossary-chase"],.manual-appearance .manual-section:has(> .section-heading > #glossary-chase),.manual-appearance .manual-section[data-section="glossary-lure"],.manual-appearance .manual-section:has(> .section-heading > #glossary-lure),.manual-appearance .manual-section[data-section="glossary-prowl"],.manual-appearance .manual-section:has(> .section-heading > #glossary-prowl){
  --rb-frame: url("../content-images/Appearance/Run%20Bun/Frame%20Dog.png");
  --rb-enamel: #4c2024;
  --rb-enamel-light: #6b3038;
