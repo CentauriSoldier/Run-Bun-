@@ -17,25 +17,6 @@
 | 🐕 **Dog** | **Prowl** | Reveals Buns without catching them. |
 | 🐕 **Dog** | **Startle** | Up to one after declaring Chase and targets; opens the targeted owner's Panic response. |
 
-
-
-### OLD — earlier card-type summary
-
-> **OLD — retained for review, not a replacement for the current rules.**
->
-> | Side | Set | What it does |
-> | --- | --- | --- |
-> | 🐇 **Bun** | **Bun** | Your **Bun** characters. |
-> | 🐇 **Bun** | **Nice** | Helps another player’s **Bun**. |
-> | 🐇 **Bun** | **Nasty** | Makes trouble for another player’s **Bun**. |
-> | 🐇 **Bun** | **Panic** | A **Reaction** you can play when one of your **Buns** is Startled. |
-> | 🐇 **Bun** | **Prep** | Gives you a head-start against the Dog. |
-> | 🐕 **Dog** | **Dog** | The **Dog** characters. |
-> | 🐕 **Dog** | **Chase** | Starts a **Chase** and can specify how it’s affected. |
-> | 🐕 **Dog** | **Lure** | Lets the **Dog** bait **Buns**. |
-> | 🐕 **Dog** | **Prowl** | Reveals **Buns** without catching them. |
-> | 🐕 **Dog** | **Startle** | TODO |
-
 ### Bun
 
 Bun cards are the characters controlled by Bun players. Each player starts with two Buns, called a Brace. They begin face down; their owner may look at them. A Bun can escape, be injured, or be eaten. Escaped Buns provide Burrow plays. The same escaped or injured Bun returns at Dawn; an eaten Bun is replaced. Cunning contributes to Guard, while the Chase modifier affects escape rolls.
@@ -83,25 +64,34 @@ Specific card effects, card count, and what happens to a Scavenge card
 after a failed check remain to be decided; the cards await implementation.
 
 
-### OLD — Scavenge design note
-
-> **OLD — retained for review, not a replacement for the current rules.**
->
-> Approved direction for an additional Survival card type, deferred for later development. Its basic role is finding or recovering useful supplies and cards to improve the player's available options. Possible approaches include recovering discards or exchanging unwanted cards; these are ideas, not adopted effects. Specific effects, timing, limits, and card count remain undecided.
-
 ### Guard
 
 Guard is played directly from hand during the Guard step, after the chased
-owner's Prep and before Chase rolls. The chased player has the first
-opportunity, followed clockwise by each other Bun player once.
+owner's Prep and before Chase rolls. All players make secret commitments
+for their eligible Buns, then reveal together; there is no clockwise choice order.
 
 Each Guard card commits **one Roaming Bun you control** to protect
 **one chased Bun**. Choose the guarding Bun and the Bun it will protect.
-During your opportunity, you may play up to one Guard card per Roaming
+You may play up to one Guard card per Roaming
 Bun you control, using a different guarding Bun for each card. You must
 have a Guard card for each Bun you commit. Burrowed, injured, and eaten
 Buns cannot be committed as guards. The helper count is not rolled and
 requires no printed Guard value.
+
+Each Bun has one reusable choice card, separate from the Survival deck.
+Guard and Pass are printed at opposite ends of the same face. Secretly
+orient the chosen end toward the Dog and place the card face down beside
+that Bun. Every eligible Bun must commit to Guard or Pass before any
+choice is revealed. You may choose Guard only if you have a separate
+Guard card in hand for each Bun you commit.
+
+Once all choices are placed, they are locked. Reveal together by flipping
+each choice card sideways, keeping the same end toward the Dog. Do not
+flip end over end or rotate it on the table. Sideways arrows on the back
+show the flip direction; the back must look identical when rotated 180
+degrees, with no top or bottom marker that could reveal the choice.
+Play one Guard card from hand for each Guard choice; Pass spends none.
+Choices cannot be changed after reveal. Keep the choice cards for reuse.
 
 **Nasty prevents Guard:** If you played a Nasty card against a Bun during
 this Dog turn, you cannot play a Guard card to protect that Bun for the
@@ -116,19 +106,13 @@ defended groups, and eligibility of already-chased helpers remain open;
 see Take a Dog Turn and Still to Decide.
 
 
-### OLD — Guard design note
-
-> **OLD — retained for review, not a replacement for the current rules.**
->
-> Approved direction for an additional Survival card type, deferred for later development. Its basic role is protecting Buns against threats. What it can protect against, whom it can protect, its timing and duration, and its distinction from Prep and Panic remain to be defined. Specific effects and card count remain undecided.
-
 ### Dog
 
 The Dog character is controlled by the Dog player. Draw one Dog at setup and place it face up. Its traits can be referenced by card effects, and its Cunning is used in Guard contests. The Dog uses Havoc cards to pursue Buns. When it catches a Bun, it chooses whether to eat or injure it under the Chase rules.
 
 ### Chase
 
-A Chase card starts a pursuit against one eligible Bun and specifies any card-specific effects. The default limit is one Chase per Dog turn; a card may grant more. After declaring Chase and targets, resolve Startle, its Panic response, other players' Nice and Nasty, the chased owner's Prep, and Guard before Chase rolls. A Chase canceled by an effect stops without Chase rolls. The existing limit is one Chase against a Bun per Dog turn, with Redirect and Guard interactions still open.
+A Chase card starts a pursuit against one eligible Bun and specifies any card-specific effects. The default limit is one Chase per Dog turn; a card may grant more. After declaring Chase and targets, resolve Startle, its Panic response, other players' Nice and Nasty, the chased owner's Prep, and Guard before Chase rolls. A Chase canceled by an effect stops without Chase rolls. The existing limit is one Chase against a Bun per Dog turn, with Divert and Guard interactions still open.
 
 Some cards allow the Dog to make a second or additional Chase during the
 same turn. **Finish the current Chase completely before starting the next.**
@@ -154,26 +138,51 @@ Prowl is a Havoc card that reveals Buns without catching them. The Dog may play 
 
 The Dog may play one Startle after declaring the Chase and its targets. Startle opens a Panic response only for the chased Bun's owner, for that Bun. Startle is a Havoc card; individual effects remain to be defined.
 
-## Dog traits
+## Traits
 
-Buns and Dogs have **traits**, which card effects can refer to. Check the
-traits printed on the character card when an effect names a particular trait.
-Trait names have no intrinsic mechanical effect; the card text defines what
-happens when it refers to a trait.
+Traits are named attributes on Bun and Dog cards. Card effects can use
+them to identify eligible targets or specify bonuses, penalties, or other
+conditions. A trait does not grant an effect by itself; follow the text
+of the card that refers to it.
+
+### Dog traits
 
 The current Dog traits are:
 
-- **Cruel**
-- **Cunning**
-- **Merciless**
-- **Patient**
-- **Ravenous**
-- **Reckless**
-- **Relentless**
+- **Cruel** — Lets you finish your little speech. It likes the hopeful bit.
+- **Cunning** — The emergency exit was its idea. So was the arrow pointing toward it.
+- **Merciless** — Accepts apologies. Does not accept them as payment.
+- **Patient** — Your hiding place has an excellent view of you eventually needing a piss.
+- **Ravenous** — Calls it a food chain because calling it a queue upsets the Buns.
+- **Reckless** — The fence says KEEP OUT. It reads that as a serving suggestion.
+- **Relentless** — Still chasing the Bun whose missing poster has faded.
+
+Each is a label that card effects may refer to, rather than a separate
+ability. The **Cunning** trait is distinct from the numeric Cunning stat.
 
 A Dog can have more than one trait. For example, Gallows is **Ravenous**
-and **Relentless**. An effect that applies only against **Reckless** Dogs
-does not apply to Gallows based on those printed traits.
+and **Relentless**. Just Wide Enough gives +3 to an escape roll against
+a **Reckless** Dog, so Gallows does not qualify based on its printed traits.
+
+### Bun traits
+
+Bun traits serve the same purpose: card effects can refer to them to
+identify eligible Buns or specify conditions. The defined Bun traits are:
+
+- **Brave** — Stands up to monsters. The memorial portrait captures this beautifully.
+- **Clever** — Knows seventeen ways out. Explaining them has used up sixteen.
+- **Clumsy** — Trips over nothing. Nothing has an impressive body count.
+- **Curious** — Found out what the screaming was about. Now contributing.
+- **Empathic** — Understands the Dog is hungry. Wishes empathy came with a fucking off switch.
+- **Foodie** — Can identify every herb in the marinade. This is becoming uncomfortably relevant.
+- **Loyal** — Would never leave a friend behind. This makes the catering wonderfully predictable.
+- **Nimble** — Can turn on a sixpence. The Dog is hoping for change.
+- **Observant** — Spotted the trap, the teeth, and the suspicious absence of previous winners.
+- **Resourceful** — Built an escape ladder from scraps. Nobody asks whose belt that was.
+- **Selfish** — Believes every Bun deserves a chance. Preferably after theirs.
+- **Sneaky** — Leaves no footprints, no witnesses, and a friend holding the blame.
+
+These traits are defined but are not yet assigned to individual Buns.
 
 ## Four decks
 ###### Shuffled Before First Draw and Kept Face Down.
@@ -187,20 +196,6 @@ does not apply to Gallows based on those printed traits.
 
 
 
-### OLD — earlier deck composition
-
-> **OLD — retained for review, not a replacement for the current rules.**
->
-> ### Four decks
-> ###### Shuffled Before First Draw and Kept Face Down.
->
-> | Deck | Contents |
-> | --- | --- |
-> | **Bun** | **Bun** characters only;  |
-> | **Dog** | **Dog** characters only; shuffled and kept face down. |
-> | **Havoc** | The **Dog**’s action deck: **Chase**, **Lure**, **Prowl**, and **Startle**. |
-> | **Survival** | The **Buns**’ shared action deck: **Nice**, **Nasty**, and **Panic**. **Prep** is proposed as a fourth type, not adopted. |
-
 ## Cunning value
 
 Cunning is the agreed name for a comparative numeric card stat. In Guard,
@@ -209,8 +204,3 @@ Individual values and other uses remain to be designed. The existing
 Dog trait also named Cunning is distinct from this new numeric stat;
 its naming needs review before implementation.
 
-### OLD — trait terminology note
-
-> **OLD — retained for review, not a replacement for the current rules.**
->
-> Use "traits" for Bun and Dog attributes in the manual and player-facing explanations. The existing CSV field remains Tags; do not rename the backend field. The manual's card-types.md now lists Dog traits between the card-type overview and deck descriptions: Cruel, Cunning, Merciless, Patient, Ravenous, Reckless, Relentless. Do not invent intrinsic mechanical effects for trait names; apply the conditions specified by cards.

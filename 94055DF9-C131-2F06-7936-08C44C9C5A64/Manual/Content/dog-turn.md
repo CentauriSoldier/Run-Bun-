@@ -94,7 +94,7 @@ catch them; catching requires a Chase.
 
 1. **Declare Chase and targets.** The Dog plays Chase and selects one
    eligible Bun as its target. The existing limit is one
-   Chase against a Bun per Dog turn; Redirect and Guard interactions
+   Chase against a Bun per Dog turn; Divert and Guard interactions
    with that limit remain open.
 2. **Play Startle.** The Dog may play one Startle for this Chase.
 3. **Panic response to Startle.** Only the chased Bun's owner may play
@@ -106,9 +106,14 @@ catch them; catching requires a Chase.
 5. **Chased owner's Prep.** Only the chased Bun's owner may activate
    Prep, and only for that chased Bun. The owner may activate any number
    of applicable Prep. If the Chase is canceled, stop.
-6. **Declare Guards.** The chased player gets the first opportunity to
-   play Guard directly from hand. Continue clockwise, giving each other
-   Bun player one opportunity. During your opportunity, each Guard card
+6. **Declare Guards.** All players secretly choose Guard or Pass for each
+   eligible Bun using its reusable choice card. Place the chosen end toward
+   the Dog, face down beside that Bun. Once everyone has committed, choices
+   are locked. Reveal together with a sideways flip, keeping the same end
+   toward the Dog; do not flip end over end or rotate the card. Follow the
+   sideways arrows on the back. Each Guard choice requires a separate Guard
+   card from hand; Pass spends none. Choices cannot be taken back.
+   Each Guard card
    commits one Roaming Bun you control to protect one chased Bun. Choose
    both Buns for each card. You may play at most one Guard card per Roaming
    Bun you control, using a different guarding Bun for each card. Burrowed,
@@ -256,7 +261,7 @@ Bun’s status at the end of the turn to calculate its player’s limit.
 > ### 🎲 Resolve a **Chase**
 >
 > 1. **Choose the target.** The **Dog** plays a **Chase** card and picks an eligible
->    **Bun** in play. A **Bun** can be chased only once per **Dog** turn. How **Redirects**
+>    **Bun** in play. A **Bun** can be chased only once per **Dog** turn. How **Diverts**
 >    count toward that limit is still open.
 > 2. **React.** The targeted **Bun**’s player can play one **Panic** card. Apply
 >    any legal modifiers before rolling. The **Chase** goes ahead even if the

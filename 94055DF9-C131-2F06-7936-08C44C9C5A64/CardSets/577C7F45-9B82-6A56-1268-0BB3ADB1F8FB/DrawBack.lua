@@ -7,6 +7,15 @@ return function(sObject, D, hDC)
     local nHeight       = _nCardHeight;
     local sDeck         = _tRow.Deck;
     local pComponents   = _pCardSet.."/Images/Components";
+
+    --Almanac and Clockwork keep their interiors and branded border as separate layers
+    if (sDeck == "Almanac" or sDeck == "Clockwork") then
+        Forge.DrawRectangle(0, 0, nWidth, nHeight, 0x000000FF);
+        Forge.DrawImage(pComponents.."/Back "..sDeck..".png", 0, 0, nWidth, nHeight);
+        Forge.DrawImage(pComponents.."/Back Border.png", 0, 0, nWidth, nHeight);
+        return;
+    end
+
     local pArt          = pComponents.."/Resize/"..sDeck.." Flush Source/Back "..sDeck..".png";
     local nSourceWidth  = sDeck == "Survival" and 1074 or 1075;
     local nSourceHeight = sDeck == "Dog" and 1463 or 1464;

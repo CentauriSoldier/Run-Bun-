@@ -10,9 +10,9 @@
   settle remaining Burrow timing, and decide how
   an escape affects a play already spent that turn, and how to choose
   replacement Buns.
-- **Card effects and Redirects.** Define individual cards, including how Lures
-  and Redirects interact with Panic and the once-per-turn target limit. Check
-  that hiding and Redirects cannot prevent the day from ending indefinitely.
+- **Card effects and Diverts.** Define individual cards, including how Lures
+  and Diverts interact with Panic and the once-per-turn target limit. Check
+  that hiding and Diverts cannot prevent the day from ending indefinitely.
 
 Earlier wording is retained in OLD subsections beside the matching rules.
 
@@ -55,9 +55,9 @@ Earlier wording is retained in OLD subsections beside the matching rules.
 > - **Bun play timing.** Set the windows for regular and **Burrow** plays, how
 >   an escape affects a play already spent that turn, and how to choose
 >   replacement **Buns**.
-> - **Card effects and Redirects.** Define individual cards, including how **Lures**
->   and **Redirects** interact with **Panic** and the once-per-turn target limit. Check
->   that hiding and **Redirects** cannot prevent the day from ending indefinitely.
+> - **Card effects and Diverts.** Define individual cards, including how **Lures**
+>   and **Diverts** interact with **Panic** and the once-per-turn target limit. Check
+>   that hiding and **Diverts** cannot prevent the day from ending indefinitely.
 
 ### OLD — rule-changing card proposal
 

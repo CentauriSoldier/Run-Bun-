@@ -165,6 +165,26 @@
 }
 .font-flavor[data-inline] { font-size: inherit; }
 
+/* style: GUARDNAME */
+.font-guardname {
+	font-family: "Germania One", sans-serif;
+	font-size: 38pt;
+	font-weight: 400;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(86,35,112,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0.0197368em rgba(31,12,45,1);
+	paint-order: stroke fill;
+	background-image: linear-gradient(to bottom, rgba(37,15,56,1) 0%, rgba(113,53,148,1) 38%, rgba(242,214,180,1) 49%, rgba(87,38,116,1) 58%, rgba(48,20,63,1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.font-guardname[data-inline] { font-size: inherit; }
+
 /* style: INFORMATION */
 .font-information {
 	font-family: "Almendra", sans-serif;
@@ -281,22 +301,6 @@
 }
 .font-prepname[data-inline] { font-size: inherit; }
 
-/* style: RULER */
-.font-ruler {
-	font-family: "Times New Roman", sans-serif;
-	font-size: 10pt;
-	font-weight: 400;
-	font-style: normal;
-	font-synthesis: weight style;
-	color: rgba(201,202,203,1);
-	letter-spacing: 0em;
-	text-decoration-line: none;
-	text-shadow: none;
-	-webkit-text-stroke: 0 transparent;
-	paint-order: stroke fill;
-}
-.font-ruler[data-inline] { font-size: inherit; }
-
 /* style: PROWLNAME */
 .font-prowlname {
 	font-family: "Trade Winds", sans-serif;
@@ -316,6 +320,42 @@
 	-webkit-text-fill-color: transparent;
 }
 .font-prowlname[data-inline] { font-size: inherit; }
+
+/* style: RULER */
+.font-ruler {
+	font-family: "Times New Roman", sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(201,202,203,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0 transparent;
+	paint-order: stroke fill;
+}
+.font-ruler[data-inline] { font-size: inherit; }
+
+/* style: SCAVENGENAME */
+.font-scavengename {
+	font-family: "Berkshire Swash", sans-serif;
+	font-size: 38pt;
+	font-weight: 400;
+	font-style: normal;
+	font-synthesis: weight style;
+	color: rgba(39,91,47,1);
+	letter-spacing: 0em;
+	text-decoration-line: none;
+	text-shadow: none;
+	-webkit-text-stroke: 0.0197368em rgba(16,38,20,1);
+	paint-order: stroke fill;
+	background-image: linear-gradient(to bottom, rgba(16,38,20,1) 0%, rgba(57,119,62,1) 38%, rgba(242,214,180,1) 49%, rgba(40,93,48,1) 58%, rgba(23,60,32,1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.font-scavengename[data-inline] { font-size: inherit; }
 
 /* style: STARTLENAME */
 .font-startlename {

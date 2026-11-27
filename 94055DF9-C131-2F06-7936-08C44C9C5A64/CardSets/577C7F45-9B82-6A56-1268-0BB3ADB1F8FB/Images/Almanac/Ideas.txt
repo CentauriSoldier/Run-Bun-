@@ -1,0 +1,26 @@
+Run Bun! — Almanac day cards still to build
+
+19 remaining of 23 approved concepts. Bun, Dog, Dragon and Reaper artwork is installed.
+These names are concepts, not authored effects or flavor text. This list does not authorize generation of the remaining cards.
+
+Day of the Jackalope
+Day of the Wolf
+Day of the Gryphon
+Day of the Moonhare
+Day of the Hellhound
+Day of the Clockwork Hare
+Day of the Hart
+Day of the Wyvern
+Day of the Basilisk
+Day of the Chimera
+Day of the Gargoyle
+Day of the Ram
+Day of the Raven
+Day of the Fox
+Day of the Owl
+Day of the Kraken
+Day of the Briar Beast
+Day of the Leviathan
+Day of the Kirin
+
+Interval is a Clockwork utility card conceptually, not one of these 23 days. Its CSV membership and front/back rendering now use Clockwork.

@@ -1,23 +1,21 @@
 <!-- section: effects; source: 0 -->
 ## Effects
 
-Effects is the shared term for named abilities and statuses. Their timing
-and rules are defined here so cards can give short targeting instructions.
+Effects is the shared term for named abilities and statuses. See the
+glossary for their definitions, timing and rules.
 
-### Cozy
-
-When a Chase is declared, activate Cozy during the applicable Prep
-response step, after the Panic and Nice/Nasty responses and before Guard. Only the chased Bun's owner may activate this Prep, and only for that
-chased Bun. Safe and Sound requires that Bun to be Roaming.
-
-A Cozy Bun cannot be targeted by a Chase unless the Dog has used Prowl on
-**that Bun**. If Cozy is applied in response to a Chase that it prevents,
-cancel that Chase. Playing Prowl on a different Bun does not bypass Cozy.
-
-**Safe and Sound card wording:** Apply Cozy to your chased Roaming Bun.
-
-Cozy's duration and whether an earlier turn's Prowl counts remain
-undecided.
+- Catch
+- Contend
+- Cozy
+- Divert
+- Eat
+- Escape
+- Expose
+- Hide
+- Injured
+- Lucky
+- Release
+- Unlucky
 
 ### Other agreed card effects
 

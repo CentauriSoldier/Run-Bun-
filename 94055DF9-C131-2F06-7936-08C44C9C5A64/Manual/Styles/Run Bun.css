@@ -501,3 +501,32 @@ p:has(> img[src$="Cover/Logo.png"]) > img[src$="Cover/Title.png"] {
     .manual-section.section-level-2 { background-size: calc(100% - 8px) calc(100% - 8px); }
     .manual-section.section-level-3 { background-size: calc(100% - 6px) calc(100% - 6px); }
 }
+/* Keep glossary definitions together in compact, alphabetical screen columns. */
+@media screen {
+    #glossary { columns: 18rem 3; column-gap: 1rem; }
+    #glossary > .section-heading,
+    #glossary > .section-copy,
+    #glossary > section:not([id^="glossary-"]) { column-span: all; }
+    #glossary > .section-heading { margin-bottom: .8rem; }
+    #glossary > .section-copy:empty { display: none; }
+    #glossary > section[id^="glossary-"] {
+        break-inside: avoid;
+        margin: 0 0 .8rem;
+        padding: .35rem;
+        border-width: 12px;
+        border-image-width: 12px;
+        border-radius: 16px;
+        background-size: calc(100% - 6px) calc(100% - 6px);
+    }
+    #glossary > section[id^="glossary-"]::before { display: none; }
+    #glossary > section[id^="glossary-"] > .section-heading { padding: .45rem .6rem; gap: .45rem; }
+    #glossary > section[id^="glossary-"] > .section-heading h3 { font-size: 1.1rem; }
+    #glossary > section[id^="glossary-"] > .section-copy { padding: .55rem .35rem .2rem; }
+    #glossary > section[id^="glossary-"] > .section-copy p,
+    #glossary > section[id^="glossary-"] > .section-copy li { line-height: 1.45; }
+    #glossary > section[id^="glossary-"] > .section-copy p { margin-bottom: .55rem; }
+    #glossary > section[id^="glossary-"] > .section-copy > :last-child { margin-bottom: 0; }
+}
+@media screen and (max-width: 575.98px) {
+    #glossary { column-count: 1; }
+}

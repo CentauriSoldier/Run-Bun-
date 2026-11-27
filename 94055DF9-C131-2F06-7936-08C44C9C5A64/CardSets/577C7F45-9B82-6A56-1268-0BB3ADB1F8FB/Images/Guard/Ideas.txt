@@ -1,0 +1,84 @@
+Run Bun! — Guard card ideas
+Production handoff
+
+Scope
+Twenty Guard action-card illustrations for the Survival deck. These are scene concepts, not card mechanics or description text. Save final art in Images/Guard using the existing Guard frame. CSV and drawing-code integration are deferred. The separate utility Guard commitment card is not this artwork set.
+
+Current direction
+Read the project uppercase Markdown files and shared/Bun/Dog/Guard GEN.md guides before generating. Use actual approved installed Bun and Dog images as direct visual references. The previous drafts are rejected.
+Buns rally through cunning, skills, resourcefulness and environmental use. Occasional strength is fine; brute strength is not the central theme. Usually one to three or four helpers aid a threatened Bun, who begins rallying too.
+Show a real contest in progress. The Dog must be in immediate credible peril from their intervention, not far away with ample time to avoid it. Do not establish victory, escape or defeat. The Dog remains threatening.
+Buns look worried, angry or determined; occasional mischief is fine. No happy rescue celebration.
+Vary Dog identity, Bun cast, fur, headgear, clothing, poses, composition, viewpoint, setting, architecture, terrain, weather, lighting and sky. Do not copy one Dog, skyline, blimp, glass dome or ensemble repeatedly.
+Use different existing roster Dogs or genuinely distinct designs faithful to them. Do not use one generic action-scene reference as the Dog model for the whole batch.
+Buns must visibly wear the established steampunk outfits, including hats/headgear, goggles, belts, pouches and layered clothing. Maintain approved cute compact rabbit anatomy and full clothing coverage.
+Exactly two arms and two hands per Bun; each hand has three fingers plus one thumb. Trace each limb and grip. Dogs have four limbs and two eyes. Check physical fit, hinges, ropes, wheels, balance, force directions and perspective.
+Helpers need not stand together. Give them distinct complementary jobs around the environment, with varied elevations, cover and directions. Grouping is occasionally fine, not the recurring composition.
+Detailed full-color rendering, sharp scenery throughout; no blur, baked-in title or frame. No graphic injury.
+Latest workflow supersedes the earlier four-at-a-time request: build ONE image and iterate with the user until approved before producing more. No first-scene draft has been approved. User may continue in another chat; no delegation has been requested.
+
+Twenty concepts
+1. Wrong Turn
+Two helpers swing a garden gate across the pursuing Dog's path while a third helps the threatened Bun toward a narrow gap. The threatened Bun starts helping rather than merely being carried away. Stage an immediate contested interception with credible gate hinge and swing geometry; the Dog cannot simply stroll around it. Earlier revisions had faulty physics and an extra Bun arm and are rejected. Do not treat the later rope/latch/rake arrangement as user-approved.
+
+2. Loose Ends
+Helpers on opposite sides of an alley pull a fallen clothesline taut while their chased friend ducks beneath it. The Dog is already committed into the snag's immediate reach, not safely distant. Show opposing pulls, connected rope and plausible leverage. User especially liked this idea.
+
+3. Market Forces
+One helper releases a produce cart's brake, another steers its handles, and the threatened Bun turns to join the effort. The cart crosses the Dog's committed path at close quarters. It is an environmental interception, not a cheerful shopping trip. Keep wheels, brake, handles and force direction coherent.
+
+4. Unpleasant Opening
+Two helpers snap oversized patched umbrellas open between the Dog and its target. Their threatened friend struggles to open a third. The shaky fabric-and-brass barrier puts the Dog in immediate difficulty while remaining vulnerable to it. This replaces the rejected flexible-branch concept, already used elsewhere.
+
+5. Under New Management
+Helpers pop up from separate burrow openings around the Dog, clattering saucepan lids to split its attention. The threatened Bun starts rallying with a dented kettle. Use different positions and timing to make a coordinated immediate contest rather than distant noise.
+
+6. Emergency Exit
+A helper strains to lift a heavy street grate; another reaches up from the drain. The threatened Bun helps lift while a fourth helper waves a coat from behind a stout bollard. Heighten close danger and the Dog's difficulty negotiating the improvised intervention. The grate is not already a successful escape.
+
+7. A Clean Getaway
+Helpers tip a laundry trough across a stone courtyard while their threatened friend grabs a hanging sheet for support. Suds reach the pursuing Dog's footing and threaten its balance, but no completed fall or escape is shown. Separate the trough operators and sheet user naturally.
+
+8. Load-Bearing Friendship
+Two helpers brace a plank across a narrow ditch while a third holds the rope that could retrieve it. Their threatened friend is still crossing with the Dog pressing into the contest. Keep the ORIGINAL narrow-ditch setting: the user suggested a large woodland chasm, then explicitly withdrew that change.
+
+9. Special Delivery
+The threatened Bun crouches in an open delivery crate as helpers maneuver it beneath a low fence, with another using its empty lid as a distraction. Show the maneuver unfinished and contested. User accepted trying this concept.
+Naming issue: Special Delivery already exists as a Lure card. Preserve this working title here; resolve the final name with the user before CSV registration.
+
+10. Curtain Call
+Helpers on a balcony lower a heavy market awning into the Dog's path. The threatened Bun catches the bottom edge and helps pull it across. The fabric is engaging the Dog's advance, with supports and pull directions visible; no completed capture or safe escape.
+
+11. Loose Slates
+Two helpers on a low potting shed shift loose roof slates toward the edge above the Dog's approach. Their threatened friend braces a garden rake in the passage below. The slates are moving and the Dog is immediately challenged; no injury or finished outcome. This replaces the steam-valve concept, already used elsewhere.
+
+12. Dock and Cover
+Two helpers pull a moored rowboat toward a canal landing while another stretches an oar toward their cornered friend, who grips the dock rail with one paw. The Dog closes into the unstable dockside contest; the boat is still out of reach. Keep all rope/oar attachments and reach distances plausible. This replaces the entire fence-gap idea and its already-used title Mind the Gap.
+
+13. Going Up
+Helpers crank a warehouse hoist to raise a cargo basket with the threatened Bun. That Bun reaches toward another helper while the Dog contests the lift. Keep rigging connected and the basket not already safely beyond reach. Separate crank operator, basket occupant and reaching helper spatially.
+
+14. Table Manners
+Helpers tip a stout picnic table into a barricade while the threatened Bun stops retreating and helps brace it. Show the Dog actively challenged by the moving structure, with leverage and footing rather than super-strength. No completed secure barricade or victory.
+
+15. False Advertising
+A helper operates a rabbit-shaped bundle on a pulley while other helpers work to guide their threatened friend toward a side door. The Dog is caught in the immediate competing movements, not already fooled into a successful escape. User especially liked the decoy concept.
+
+16. Rolling Resistance
+Helpers roll a large empty barrel into a narrow passage and begin wedging it while their threatened friend turns to help. The Dog presses into the contested obstruction. This was in the original twenty; the user did not individually comment on it before broadly authorizing production.
+
+17. Occupational Hazard
+A helper scatters loose wooden spools across a workshop floor while another reaches to help the threatened Bun onto a workbench. The Dog encounters the unstable footing immediately; no completed fall or rescued Bun. Keep scattered spools and supporting surfaces physically readable.
+
+18. Hedge Your Bets
+Helpers open a concealed woven branch panel in a thick hedge for their threatened friend. Show an unfinished coordinated passage and closure, with the Dog actively challenging it. Do not show everyone already safely through.
+
+19. Strength in Small Numbers
+Small helpers use a long timber as a lever to move a heavy obstruction, and the threatened Bun joins their effort. Visible fulcrum, load and separated jobs explain how clever teamwork threatens the Dog. No super-strength. User especially liked this idea.
+
+20. Local Knowledge
+A helper perched on a signpost directs companions through a crowded courtyard. They work from separate positions to open a narrow route through stacked baskets for their threatened friend, using obstacles to immediately impede the Dog. No settled escape or passive distant Dog.
+
+Status
+All generated Guard images from this attempt are rejected and belong in the rejects folder, not the final Guard artwork root. The generation tool automatically displays its outputs before manual inspection; display is not acceptance. No CSV rows or Draw.lua changes were made for this batch.
+

@@ -8,7 +8,7 @@ one or more Bun players, settle it with Last Chase.
 The Dog can score from any Brace. That gives Bun players a reason to
 cooperate when the Dog is ahead. A veteran Bun is also a tempting target
 for rivals. On Day 3, a Bun with two earlier escapes can score **+4** by
-escaping or **−1** if eaten, even before the Brace bonus. A Redirect can
+escaping or **−1** if eaten, even before the Brace bonus. A Divert can
 sabotage its owner or give them the escape they needed.
 
 ### 🎲 **Last Chase**
@@ -33,7 +33,7 @@ settle the Chase outcome, and the final scores stay the same.
 > The **Dog** can score from any **Brace**. That gives **Bun** players a reason to
 > cooperate when the **Dog** is ahead. A veteran **Bun** is also a tempting target
 > for rivals. On Day 3, a **Bun** with two earlier escapes can score **+4** by
-> escaping or **−1** if eaten, even before the **Brace** bonus. A **Redirect** can
+> escaping or **−1** if eaten, even before the **Brace** bonus. A **Divert** can
 > sabotage its owner or give them the escape they needed.
 >
 > ### 🎲 **Last Chase**

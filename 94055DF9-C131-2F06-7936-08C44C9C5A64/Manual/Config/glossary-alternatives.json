@@ -13,8 +13,9 @@
         "Bunnies’"
     ],
     "glossary-catch-roll-escape-roll": [
-        "Escape Roll",
-        "Catch Rolls",
+        "Catch Rolls"
+    ],
+    "glossary-escape-roll": [
         "Escape Rolls"
     ],
     "glossary-brace": [
@@ -56,10 +57,22 @@
     "glossary-reaction": [
         "Reactions"
     ],
-    "glossary-redirect": [
-        "Redirects"
+    "glossary-divert": [
+        "Diverts"
     ],
     "glossary-prowl": [
         "Prowls"
+    ],
+    "glossary-dawn": [
+        "Dawns"
+    ],
+    "glossary-day": [
+        "Days"
+    ],
+    "glossary-dusk-dawn": [
+        "Dusks"
+    ],
+    "glossary-interval": [
+        "Intervals"
     ]
 }

@@ -7,6 +7,31 @@ return function(sObject, D, hDC)
     local nWidth        = _nCardWidth;
     local nHeight       = _nCardHeight;
 
+    --the Clockwork interval tracker is already a complete illustrated card
+    if (tRow.Type == "Interval") then
+        local nScale       = math.min(nWidth / 1049, nHeight / 1500);
+        local nArtWidth    = 1049 * nScale;
+        local nArtHeight   = 1500 * nScale;
+        Forge.DrawRectangle(0, 0, nWidth, nHeight, 0x000000FF);
+        Forge.DrawImage(_pCardSet.."/Images/Clockwork/"..tRow.Name..".png",
+            (nWidth - nArtWidth) / 2, (nHeight - nArtHeight) / 2, nArtWidth, nArtHeight);
+        return;
+    end
+
+    --day illustrations sit beneath the shared frame; rules are not authored yet
+    if (tRow.Type == "Almanac") then
+        local pImages      = _pCardSet.."/Images";
+        local sCreature    = tRow.Name:gsub("^Day of the ", "");
+        Forge.DrawImageCropped(pImages.."/Almanac/"..tRow.Name..".png",
+            nWidth * 0.50000000, nHeight * 0.44044444,
+            nWidth * 0.79393939, nHeight * 0.36711111);
+        Forge.DrawImage(pImages.."/Components/Frame Almanac.png", 0, 0, nWidth, nHeight);
+        Forge.DrawTextCurved("ALMANACNAME", nWidth / 2, nHeight * 0.10222222,
+            "Day of the", nWidth * 0.72727273);
+        Forge.DrawText("ALMANACNAMELARGE", nWidth / 2, nHeight * 0.19555556, sCreature, true, true);
+        return;
+    end
+
     --artwork bounds scaled to the current card dimensions
     local tArtBounds = {
         Bun     = {X = nWidth * 0.05333333, Y = nHeight * 0.16355556, Width = nWidth * 0.89333333, Height = nHeight * 0.43822222},
@@ -19,6 +44,24 @@ return function(sObject, D, hDC)
         Startle = {X = nWidth * 0.06787879, Y = nHeight * 0.17955556, Width = nWidth * 0.86545455, Height = nHeight * 0.41600000},
         Prowl   = {X = nWidth * 0.08000000, Y = nHeight * 0.18133333, Width = nWidth * 0.84242424, Height = nHeight * 0.40711111},
         Prep    = {X = nWidth * 0.08848485, Y = nHeight * 0.18400000, Width = nWidth * 0.82424242, Height = nHeight * 0.37866667},
+        Guard   = {X = nWidth * 0.15705932, Y = nHeight * 0.19771863, Width = nWidth * 0.68504595, Height = nHeight * 0.38783270},
+        Scavenge = {X = nWidth * 0.08007449, Y = nHeight * 0.18442623, Width = nWidth * 0.83798883, Height = nHeight * 0.40300546},
+    };
+
+    --name positions scaled to the current card dimensions
+    local tNamePositions = {
+        Bun     = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Dog     = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Chase   = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Lure    = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Nice    = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Nasty   = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Panic   = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Startle = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Prowl   = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Prep    = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
+        Guard   = {X = nWidth / 2, Y = (nHeight / 2) * 0.240},
+        Scavenge = {X = nWidth / 2, Y = (nHeight / 2) * 0.215},
     };
 
     --type positions scaled to the current card dimensions; Bun and Dog X mark the right edge
@@ -33,6 +76,8 @@ return function(sObject, D, hDC)
         Startle = {X = nWidth / 2, Y = nHeight * 0.64000000},
         Prowl   = {X = nWidth / 2, Y = nHeight * 0.64000000},
         Prep    = {X = nWidth / 2, Y = nHeight * 0.59700000},
+        Guard   = {X = nWidth / 2, Y = nHeight * 0.62000000},
+        Scavenge = {X = nWidth / 2, Y = nHeight * 0.63400000},
     };
 
     local sType         = tRow.Type;
@@ -62,7 +107,9 @@ return function(sObject, D, hDC)
     end
 
     --draw the card name
-    Forge.DrawText(sNameStyle, nWidth / 2, (nHeight / 2) * 0.215, tRow.Name:gsub("-[qQ]", '?'), true, true);
+    local tNamePosition = tNamePositions[sType];
+    Forge.DrawText(sNameStyle, tNamePosition.X, tNamePosition.Y, tRow.Name:gsub("-[qQ]", '?'), true, true);
+
     --draw Bun and Dog tags on the left and their card type on the right
     local tTypePosition = tTypePositions[sType];
     if (sType == "Bun" or sType == "Dog") then
