@@ -27,17 +27,12 @@ A Bun in the Burrow area. An Injured Bun is Hidden and cannot play Burrow cards.
 The Dog catches the chased Bun. Catch and Escape are mutually exclusive:
 when a Chase resolves, either the Dog catches the Bun or the Bun escapes.
 
-During a Chase, the Dog makes a catch roll and the Bun makes an escape
-roll using d20s. Apply the relevant modifiers; the higher total wins.
+During a Chase, the Dog makes a catch roll and the Bun makes an escape roll using d20s. Apply the relevant modifiers; the higher total wins.
 A Dog win means Catch; a Bun win means Escape.
 
-Natural rolls take precedence over modified totals. A natural 20 succeeds
-and a natural 1 fails: a Dog natural 20 or Bun natural 1 means Catch;
-a Bun natural 20 or Dog natural 1 means Escape. If both roll natural 20s
-or both roll natural 1s, both reroll instead.
+Natural rolls take precedence over modified totals. A natural 20 succeeds and a natural 1 fails: a Dog natural 20 or Bun natural 1 means Catch; a Bun natural 20 or Dog natural 1 means Escape. If both roll natural 20s or both roll natural 1s, both reroll instead.
 
-If neither rolls a natural 1 or 20 and their modified totals tie, both
-reroll. Repeat until the Chase resolves.
+If neither rolls a natural 1 or 20 and their modified totals tie, both reroll. Repeat until the Chase resolves.
 
 <!-- section: glossary-catch-roll-escape-roll; source: 0 -->
 ### Catch Roll
@@ -62,12 +57,9 @@ Any adversarial Bun-versus-Bun roll.
 <!-- section: glossary-cozy; source: 0 -->
 ### Cozy
 
-A Cozy Bun cannot be targeted by a Chase unless the Dog has used Prowl on
-**that Bun**. If Cozy is applied in response to a Chase that it prevents,
-cancel that Chase. Playing Prowl on a different Bun does not bypass Cozy.
+A Cozy Bun cannot be targeted by a Chase unless the Dog has used Prowl on **that Bun**. If Cozy is applied in response to a Chase that it prevents, cancel that Chase. Playing Prowl on a different Bun does not bypass Cozy.
 
-Cozy's duration and whether an earlier turn's Prowl counts remain
-undecided.
+Cozy's duration and whether an earlier turn's Prowl counts remain undecided.
 
 <!-- section: glossary-cunning; source: 0 -->
 ### Cunning
@@ -77,17 +69,12 @@ A numeric stat used in Guard contests. Participating Buns combine their Cunning 
 <!-- section: glossary-dawn; source: 0 -->
 ### Dawn
 
-The first interval of the game, followed by Day. Play through a series of
-Dog turns until every Bun has escaped or been caught and either eaten or
-released.
+The first interval of the game, followed by Noon. Play through a series of Dog turns until every Bun has escaped or been caught and either eaten or released.
 
 <!-- section: glossary-day; source: 0 -->
 ### Day
 
-The second interval of the game, between Dawn and Dusk. Like each interval,
-it consists of Dog turns until every Bun has escaped or been caught and
-either eaten or released. A full game also represents one complete day,
-containing all three intervals.
+The full game, consisting of three intervals played in order: Dawn, Noon, and Dusk.
 
 <!-- section: glossary-divert; source: 0 -->
 ### Divert
@@ -102,9 +89,7 @@ The character that pursues the Buns, or the player controlling it.
 <!-- section: glossary-dusk-dawn; source: 0 -->
 ### Dusk
 
-The third and final interval of the game, following Day. Play through Dog
-turns until every Bun has escaped or been caught and either eaten or
-released. Completing Dusk ends the game.
+The third and final interval of the game, following Noon. Play through Dog turns until every Bun has escaped or been caught and either eaten or released. Completing Dusk ends the game.
 
 <!-- section: glossary-eat; source: 0 -->
 ### Eat
@@ -114,13 +99,9 @@ Remove the caught Bun from the game permanently. The Dog gains 1 point, and the 
 <!-- section: glossary-escape; source: 0 -->
 ### Escape
 
-The chased Bun escapes the Dog instead of being caught. Escape is the
-opposite outcome to Catch; only one can occur when a Chase resolves.
+The chased Bun escapes the Dog instead of being caught. Escape is the opposite outcome to Catch; only one can occur when a Chase resolves.
 
-The Bun escapes by winning the opposed Chase roll. A Bun natural 20
-or Dog natural 1 means Escape, except that matching natural 20s or
-matching natural 1s make both sides reroll. See Catch for the shared
-roll, modifier and tie rules.
+The Bun escapes by winning the opposed Chase roll. A Bun natural 20 or Dog natural 1 means Escape, except that matching natural 20s or matching natural 1s make both sides reroll. See Catch for the shared roll, modifier and tie rules.
 
 <!-- section: glossary-escape-roll; source: 0 -->
 ### Escape Roll
@@ -165,30 +146,20 @@ An Injured Bun is one the Dog has released after catching it. It is placed Hidde
 <!-- section: glossary-interval; source: 0 -->
 ### Interval
 
-One of the three parts of a full game's day: Dawn, Day, and Dusk, played
-in that order. Each interval contains a series of Dog turns and ends when
-every Bun has escaped or been caught and either eaten or released. The
-interval card tracks progress from its top section to its bottom section.
-Each interval will have its own modifiers; those modifiers remain to be
-defined.
+One of the three parts of a full game's day: Dawn, Noon, and Dusk, played in that order. Each interval contains a series of Dog turns and ends when every Bun has escaped or been caught and either eaten or released. The interval card tracks progress from its top section to its bottom section.
+Each interval will have its own modifiers; those modifiers remain to be defined.
 
 <!-- section: glossary-last-chase; source: 0 -->
 ### Last Chase
 
-A final, sudden-death Chase roll that decides the winner when the Dog
-ties with a Bun for first place at the end of the game. The Dog makes
-a d20 catch roll and the Bun makes a d20 escape roll. All active modifiers
-that apply to those rolls for the Dog and Bun apply. Use the normal Catch
-and Escape rules, including natural rolls and rerolls.
+A final, sudden-death Chase roll that decides the winner when the Dog ties with a Bun for first place at the end of the game. The Dog makes a d20 catch roll and the Bun makes a d20 escape roll. All active modifiers that apply to those rolls for the Dog and Bun apply. Use the normal Catch and Escape rules, including natural rolls and rerolls.
 
 <!-- section: glossary-lucky; source: 0 -->
 ### Lucky
 
 Roll twice and take the better of the two results.
 
-If Lucky specifies a type of roll, it applies only to that type. For example,
-**Lucky on escape rolls** applies only to escape rolls. If no type is
-specified, Lucky applies to all rolls.
+If Lucky specifies a type of roll, it applies only to that type. For example, **Lucky on escape rolls** applies only to escape rolls. If no type is specified, Lucky applies to all rolls.
 
 <!-- section: glossary-lure; source: 0 -->
 ### Lure
@@ -209,6 +180,11 @@ The number showing on the die before modifiers.
 ### Nice
 
 Nice cards help another player's Bun.
+
+<!-- section: glossary-noon; source: 0 -->
+### Noon
+
+The second interval of the game, between Dawn and Dusk. Play through Dog turns until every Bun has escaped or been caught and either eaten or released.
 
 <!-- section: glossary-panic; source: 0 -->
 ### Panic
@@ -233,9 +209,7 @@ A card played in response to an event. For example, Panic responds to Startle du
 <!-- section: glossary-release; source: 0 -->
 ### Release
 
-Applies only if the Dog catches a Bun. The Bun's player loses points, and
-the Dog gains no points. Place the released Bun in the Burrow area,
-Hidden and Injured.
+Applies only if the Dog catches a Bun. The Bun's player loses points, and the Dog gains no points. Place the released Bun in the Burrow area, Hidden and Injured.
 
 The point loss is intended to be high; the exact amount remains undecided.
 
@@ -252,11 +226,8 @@ A Survival card for finding or exchanging supplies. Its effect requires a succes
 <!-- section: glossary-scavenge-check; source: 0 -->
 ### Scavenge Check
 
-Roll a d20, add the acting Roaming Bun's Scavenge value and the Scavenge
-card's modifier. A total of 16 or higher succeeds. A natural 20 always
-succeeds and a natural 1 always fails, regardless of modifiers.
-Each Roaming Bun provides one independent Scavenge opportunity per Dog turn
-during Preparation. Burrowed Buns do not contribute.
+Roll a d20, add the acting Roaming Bun's Scavenge value and the Scavenge card's modifier. A total of 16 or higher succeeds. A natural 20 always succeeds and a natural 1 always fails, regardless of modifiers.
+Each Roaming Bun provides one independent Scavenge opportunity per Dog turn during Preparation. Burrowed Buns do not contribute.
 
 <!-- section: glossary-startle; source: 0 -->
 ### Startle
@@ -278,6 +249,4 @@ Named attributes on Bun and Dog cards that card effects can refer to. Trait name
 
 Roll twice and take the worse of the two results.
 
-If Unlucky specifies a type of roll, it applies only to that type. For example,
-**Unlucky on escape rolls** applies only to escape rolls. If no type is
-specified, Unlucky applies to all rolls.
+If Unlucky specifies a type of roll, it applies only to that type. For example, **Unlucky on escape rolls** applies only to escape rolls. If no type is specified, Unlucky applies to all rolls.

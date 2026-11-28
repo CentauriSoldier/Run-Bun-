@@ -12,6 +12,8 @@ Use beautiful, richly colored Victorian-steampunk settings and purposeful mechan
 
 Character variety is imperative. Use references for style and established anatomy, not to clone the same male/female Bun or Dog across scenes. Vary individuals, fur, clothing, expression, pose and setting while retaining Run Bun identity. Dogs are demonic: menacing eyes, fangs and canine fur/anatomy; horns are optional and fur must not glow. Wolf, Ram and Hart are actual animals; do not add Angel visual references.
 
+Each creature must retain its own recognizable identity and appropriate temperament. Do not turn every mythical animal into a cute Bun, toy, hatchling or mascot. Dragons must look mature, powerful, fierce and threatening, with authentic draconic anatomy and no friendly smile. Use Bun hybrids only where they strengthen the concept, as with the approved Reaper. Keep steampunk details purposeful; do not attach arbitrary instruments or equipment to a creature's flank. Preserve approved scenery as closely as possible during a targeted creature revision.
+
 ## Separate reusable frame and lettering
 
 Preserve the approved enlarged frame scale, layout, tall title areas and generous art opening. Keep the rounded rectangular description interior completely clear; the hourglass stays below it. The thematic textured body must be continuous beneath and between ornaments, with a finished rounded outer contour. Transparency belongs only outside that contour and in the art opening, not in fragmented gaps through the frame body. Use Frame Lure, Nasty, Nice and Panic as construction references when explicitly authorized to edit a frame.

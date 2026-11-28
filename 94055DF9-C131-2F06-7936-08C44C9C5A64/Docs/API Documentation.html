@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Bun! Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+            :root {
+        --base-font-size: 16px;
+        --page: #101824;
+        --surface: #182435;
+        --surface-raised: #203047;
+        --border: #30445f;
+        --text: #e4edf7;
+        --muted: #9cabc1;
+        --accent: #79baff;
+        --accent-soft: #223e5d;
+        --navbackground: #182435;
+        --navlink: #bcd9fa;
+        --navlinkhover: #ffffff;
+        --sectiontitle: #dcecff;
+        --sectiontitlebg: #203047;
+        --sectioncontent: #e4edf7;
+        --breadcrumb-background: #141f2e;
+        --button-background: #2b4562;
+        --button-border: #4b6c90;
+        --button-hover: #365c85;
+        --button-text: #edf6ff;
+        --header-end: #1c2435;
+        --header-start: #172b44;
+        --link-hover: #b9ddff;
+        --selected-border: #5487b6;
+        --selected-text: #ffffff;
+    }
+
+    /* Page shell and compact project identity. */
+    * { box-sizing: border-box; }
+    html { font-size: var(--base-font-size); height: 100%; }
+    body {
+        margin: 0;
+        height: 100vh;
+        height: 100dvh;
+        display: grid;
+        grid-template-rows: auto auto minmax(0, 1fr);
+        overflow: hidden;
+        background: var(--page);
+        color: var(--text);
+        font-family: "Segoe UI", system-ui, sans-serif;
+        line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    a:hover { color: var(--link-hover); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    #titlebg {
+        padding: 24px 36px 22px;
+        background: linear-gradient(120deg, var(--header-start), var(--header-end));
+        border-bottom: 1px solid var(--border);
+    }
+    .dox-brand { color: var(--accent); font-weight: 800; letter-spacing: .14em; font-size: .85rem; }
+    .dox-brand span { margin-left: 12px; color: var(--muted); font-size: .7rem; font-weight: 600; }
+    #title { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; margin: 8px 0 0; letter-spacing: -.025em; }
+    .dox-subtitle { margin: 3px 0 0; color: var(--muted); font-size: .85rem; }
+
+    /* Breadcrumbs and selected items show the current location without relying on color alone. */
+    #DOX_breadcrumb-wrapper { padding: 13px 36px; background: var(--breadcrumb-background); border-bottom: 1px solid var(--border); }
+    #DOX_breadcrumb { margin: 0; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; font-size: .9rem; }
+    .breadcrumb-item + .breadcrumb-item::before { content: "/"; color: var(--muted); padding-right: 8px; float: none; }
+    .breadcrumb-item.active { color: var(--text); font-weight: 700; }
+    .breadcrumb a { text-decoration: none; }
+    .dox-workspace { display: grid; grid-template-columns: 280px minmax(0, 1fr); min-height: 0; overflow: hidden; }
+    #DOX_navmenu_wrapper { background: var(--surface); padding: 26px 18px; border-right: 1px solid var(--border); display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+    #DOX_navheading { flex-shrink: 0; font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); padding: 0 12px; margin: 0 0 14px; overflow-wrap: anywhere; }
+    #DOX_navmenu { margin: 0; padding: 0; list-style: none; gap: 5px; flex: 1; flex-wrap: nowrap; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+    #DOX_navmenu > li { flex-shrink: 0; }
+    /* Keep parent navigation visible while only the topic list scrolls. */
+    #DOX_navmenu > li:has(.dox-up) { position: sticky; top: 0; z-index: 1; background: var(--surface); flex-shrink: 0; }
+    #DOX_navmenu .nav-link { display: block; color: var(--navlink); padding: 11px 14px; border: 1px solid transparent; border-radius: 8px; text-decoration: none; overflow-wrap: anywhere; }
+    #DOX_navmenu .nav-link:hover { background: var(--surface-raised); color: var(--navlinkhover); border-color: var(--border); }
+    #DOX_navmenu .nav-link.active { background: var(--accent-soft); border-color: var(--selected-border); color: var(--selected-text); font-weight: 700; box-shadow: inset 3px 0 var(--accent); }
+    #DOX_navmenu .dox-up { color: var(--muted); font-size: .85rem; margin-bottom: 10px; }
+
+    /* Content cards separate documentation sections while keeping examples readable. */
+    #DOX_content_wrapper { padding: 28px 36px 60px; min-width: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+    .dox-topic-header { margin: 0 auto 24px; max-width: 1050px; }
+    #DOX_location { color: var(--muted); font-size: .8rem; margin: 0 0 4px; overflow-wrap: anywhere; }
+    #DOX_topic { font-size: 1.75rem; letter-spacing: -.025em; margin: 0; overflow-wrap: anywhere; }
+    #DOX_content { max-width: 1050px; margin: 0 auto; }
+    #DOX_content > .container-fluid { padding: 0; }
+    .custom-section { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 18px; background: var(--surface); overflow: hidden; box-shadow: 0 5px 18px #0002; }
+    .section-title { padding: 12px 20px; background: var(--sectiontitlebg); color: var(--sectiontitle); font-size: .85rem; font-weight: 700; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .section-content { color: var(--sectioncontent); padding: 20px; overflow-wrap: anywhere; }
+    .section-content > :last-child { margin-bottom: 0; }
+    .dox-empty { padding: 28px; border: 1px dashed var(--border); border-radius: 12px; color: var(--muted); }
+    .DOX_intro { color: var(--text); }
+    .DOX_intro .p-5 { padding: 28px !important; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+    .DOX_intro h1 { font-size: 1.6rem; }
+    .DOX_intro .lead { font-size: 1rem; color: var(--muted); }
+    pre { white-space: pre-wrap !important; overflow-wrap: anywhere; border-radius: 8px; font-size: .9rem; }
+    .copy-to-clipboard-button { background: var(--button-background); color: var(--button-text); border: 1px solid var(--button-border); border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: .8rem; }
+    .copy-to-clipboard-button:hover { background: var(--button-hover); }
+    .section-content table { color: var(--text); --bs-table-bg: transparent; --bs-table-color: var(--text); --bs-table-border-color: var(--border); --bs-table-striped-color: var(--text); }
+
+    /* Narrow screens retain both navigation and content without horizontal page overflow. */
+    @media (max-width: 760px) {
+        #titlebg, #DOX_breadcrumb-wrapper { padding-left: 20px; padding-right: 20px; }
+        .dox-workspace { grid-template-columns: 1fr; grid-template-rows: minmax(0, 35%) minmax(0, 1fr); }
+        #DOX_navmenu_wrapper { border-right: 0; border-bottom: 1px solid var(--border); padding: 18px; }
+        #DOX_navmenu { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); align-content: start; }
+        #DOX_navmenu > li:has(.dox-up) { grid-column: 1 / -1; }
+        #DOX_content_wrapper { padding: 24px 18px 40px; }
+        .section-content { padding: 16px; }
+    }
+
+        :root {
+            --accent: #79baff;
+            --accent-soft: #223e5d;
+            --border: #30445f;
+            --breadcrumb-background: #141f2e;
+            --button-background: #2b4562;
+            --button-border: #4b6c90;
+            --button-hover: #365c85;
+            --button-text: #edf6ff;
+            --header-end: #1c2435;
+            --header-start: #172b44;
+            --link-hover: #b9ddff;
+            --muted: #9cabc1;
+            --navbackground: #182435;
+            --navlink: #bcd9fa;
+            --navlinkhover: #ffffff;
+            --page: #101824;
+            --sectioncontent: #e4edf7;
+            --sectiontitle: #dcecff;
+            --sectiontitlebg: #203047;
+            --selected-border: #5487b6;
+            --selected-text: #ffffff;
+            --surface: #182435;
+            --surface-raised: #203047;
+            --text: #e4edf7;
+        }
+        
+    </style>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header id="titlebg">
+        <div class="dox-brand">DOX <span>PROJECT REFERENCE</span></div>
+        <h1 id="title">Run Bun!</h1>
+        <p class="dox-subtitle">Documentation generated by LuaEx</p>
+    </header>
+
+    <div id="DOX_breadcrumb-wrapper">
+        <nav aria-label="Your location"><ol id="DOX_breadcrumb" class="breadcrumb"></ol></nav>
+    </div>
+
+    <div class="dox-workspace">
+        <aside id="DOX_navmenu_wrapper" aria-label="Documentation topics">
+            <h2 id="DOX_navheading">Project reference</h2>
+            <ul id="DOX_navmenu" class="nav flex-column"></ul>
+        </aside>
+        <main id="DOX_content_wrapper">
+            <div class="dox-topic-header">
+                <p id="DOX_location"></p>
+                <h2 id="DOX_topic"></h2>
+            </div>
+            <div id="DOX_content"></div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/plugins/toolbar/prism-toolbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-lua.min.js"></script>
+
+    <!-- Instantiate Dox and update the page -->
+    <script>
+        const userData = {
+    "Game": {
+        "value": ``,
+        "subtable": {
+        "Effects": {
+            "value": `<div class=\"container-fluid\"><div class=\"custom-section\"><div class=\"section-title\">Description<\/div><div class=\"section-content\">   Returns game-defined text effects. Each named entry supplies Padding (integer 0..64) and Shade(tMask, nX, nY), returning red, green, blue, alpha (0..255). Coordinates are zero-based pixels. tMask.Width/Height include padding; FontHeight is the native font line height. Alpha(x,y) samples the original antialiased font mask; Distance(x,y) measures distance inside its edge. Both return zero outside the raster. Use integer sample coordinates. Keep processors deterministic: rendered runs are cached. Names are case-sensitive and may override built-ins. This file runs in the user environment; no wx objects or filesystem access are required. Save changes, then request a preview redraw to reload them.<\/div><\/div><div class=\"custom-section\"><div id=\"bbce980b-1c0c-8e3e-5ffc-fd7d30b08228\" class=\"section-title\">Example <button class=\"copy-to-clipboard-button\" onclick=\"Dox.copyToClipboard(this)\">Copy<\/button><\/div><div class=\"section-content\">   <pre><code class=\"language-lua\">--Add inside the returned table, then draw with effect name \"Copper\":\n--Copper = {\n--    Padding = 2,\n--    Shade = function(tMask, nX, nY)\n--        return 184, 115, 51, tMask.Alpha(nX, nY);\n--    end,\n--},\n--Forge.DrawTextEffect(\"NAME\", 412.5, 100, \"Example\", \"Copper\", true, true);<\/code><\/pre><\/div><\/div><\/div>`,
+            "subtable": null
+        }
+        }
+    }
+    }
+
+
+
+const doxData = {
+    "Modules": {
+        "value": `
+        <div class="DOX_intro container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="p-5 text-center rounded">
+                        <h1 class="DOX_intro">Welcome to Dox: The Lua-based Documentation System!</h1>
+                        <p class="DOX_intro lead">With Dox, you can effortlessly organize and navigate through your project's documentation, making it easier for your team and users to find the information they need.</p>
+                        <p class="DOX_intro lead">Explore its features to see how Dox can streamline your documentation process and enhance collaboration:</p>
+                        <ul class="list-unstyled">
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Simple to Use</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Easy Sidebar Navigation</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Breadcrumb Navigation</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Dynamic Content Updates</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Customizable Styling</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Responsive Design for Any Device</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Document Any Language <em>(Even A Custom One)</em></li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Uses <a href="https://prismjs.com/" target="_blank">Prism</a> For Beautiful Code Examples</li>
+                            <li><i class="DOX_intro fas fa-angle-double-right"></i> Free Forever, Public Domain Code</li>
+                        </ul>
+                        <br>
+                        <strong>Download LuaEx <em>(containing Dox)</em></strong>
+                        <br>
+                        <a class="DOX_intro" href="https://github.com/CentauriSoldier/LuaEx" target="_blank">https://github.com/CentauriSoldier/LuaEx</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `,
+        "subtable": userData
+    }
+};
+//—©_END_DOX_DEFAULT_INTRO_©—
+class Dox {
+    constructor() {
+        if (Dox.instance) {
+            return Dox.instance;
+        }
+        Dox.instance = this;
+        this.data = doxData;
+        this.activeFQXN = "Modules";
+        this.restoreLocation();
+        // Only local fragment links belong to the documentation navigator.
+        document.body.addEventListener('click', (event) => {
+            const anchor = event.target.closest('a[href]');
+            if (!anchor || !anchor.getAttribute('href').startsWith('#')) {
+                return;
+            }
+            const fragment = anchor.getAttribute('href').slice(1);
+            if (!fragment) {
+                event.preventDefault();
+                return;
+            }
+            const path = this.pathFromFragment(fragment);
+            if (this.fqxnIsValid(path)) {
+                event.preventDefault();
+                this.setActiveFQXN(path);
+                this.updatePage();
+            }
+        });
+        // History traversal renders the stored location without adding another entry.
+        window.addEventListener('popstate', () => {
+            this.restoreLocation();
+            this.updatePage(false);
+        });
+        window.addEventListener('hashchange', () => {
+            this.restoreLocation();
+            this.updatePage(false);
+        });
+    }
+    byID(id) {
+        return document.getElementById(id);
+    }
+    static copyToClipboard(button) {
+        const code = button.closest('.custom-section').querySelector('pre code, pre');
+        if (!code) {
+            return;
+        }
+        const textarea = document.createElement('textarea');
+        textarea.value = code.textContent;
+        document.body.appendChild(textarea);
+        textarea.select();
+        const copied = document.execCommand('copy');
+        textarea.remove();
+        button.textContent = copied ? 'Copied' : 'Copy failed';
+        window.setTimeout(() => { button.textContent = 'Copy'; }, 1500);
+    }
+    fqxnIsValid(path) {
+        return this.getDataByFQDN(path) !== null;
+    }
+    getActiveFQXN() {
+        return this.activeFQXN;
+    }
+    getDataByFQDN(path) {
+        let current = this.data;
+        let node = null;
+        for (const part of path.split('.')) {
+            if (!current || !Object.prototype.hasOwnProperty.call(current, part)) {
+                return null;
+            }
+            node = current[part];
+            current = node.subtable;
+        }
+        return node;
+    }
+    makeLink(path, label) {
+        const anchor = document.createElement('a');
+        anchor.href = '#' + path.replace(/^Modules\.?/, '');
+        anchor.textContent = label.split('%20').join(' ');
+        anchor.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            this.setActiveFQXN(path);
+            this.updatePage();
+        });
+        return anchor;
+    }
+    pathFromFragment(fragment) {
+        let decoded;
+        try {
+            decoded = decodeURIComponent(fragment);
+        } catch (_) {
+            return '';
+        }
+        return 'Modules.' + decoded.replace(/^Modules\.?/, '').split(' ').join('%20');
+    }
+    restoreLocation() {
+        const path = window.location.hash ? this.pathFromFragment(window.location.hash.slice(1)) : 'Modules';
+        this.activeFQXN = this.fqxnIsValid(path) ? path : 'Modules';
+    }
+    setActiveFQXN(path) {
+        if (!this.fqxnIsValid(path)) {
+            return false;
+        }
+        this.activeFQXN = path;
+        return true;
+    }
+    updateBreadcrumb() {
+        const breadcrumb = this.byID('DOX_breadcrumb');
+        breadcrumb.replaceChildren();
+        const parts = this.activeFQXN.split('.');
+        parts.forEach((part, index) => {
+            const item = document.createElement('li');
+            item.className = 'breadcrumb-item';
+            const label = index === 0 ? 'Overview' : part;
+            if (index === parts.length - 1) {
+                item.textContent = label.split('%20').join(' ');
+                item.classList.add('active');
+                item.setAttribute('aria-current', 'page');
+            } else {
+                item.appendChild(this.makeLink(parts.slice(0, index + 1).join('.'), label));
+            }
+            breadcrumb.appendChild(item);
+        });
+    }
+    updateContent() {
+        const node = this.getDataByFQDN(this.activeFQXN);
+        const content = this.byID('DOX_content');
+        content.innerHTML = node.value || '<div class="dox-empty">Choose a topic from the navigation to explore its documentation.</div>';
+        this.byID('DOX_topic').textContent = this.activeFQXN === 'Modules' ? 'Documentation overview' : this.activeFQXN.split('.').slice(-1)[0].split('%20').join(' ');
+        this.byID('DOX_location').textContent = this.activeFQXN.replace(/^Modules\.?/, '').split('%20').join(' ') || 'Explore the project reference';
+    }
+    updateNavMenu() {
+        const menu = this.byID('DOX_navmenu');
+        menu.replaceChildren();
+        const active = this.getDataByFQDN(this.activeFQXN);
+        const parentPath = this.activeFQXN.split('.').slice(0, -1).join('.');
+        const groupPath = active.subtable ? this.activeFQXN : parentPath;
+        const group = this.getDataByFQDN(groupPath);
+        const upPath = groupPath.split('.').slice(0, -1).join('.');
+        this.byID('DOX_navheading').textContent = groupPath === 'Modules' ? 'Project reference' : groupPath.split('.').slice(-1)[0].split('%20').join(' ');
+        if (upPath) {
+            const item = document.createElement('li');
+            const anchor = this.makeLink(upPath, '← Back to parent');
+            anchor.className = 'nav-link dox-up';
+            item.appendChild(anchor);
+            menu.appendChild(item);
+        }
+        Object.keys(group.subtable || {}).sort().forEach((key) => {
+            const path = groupPath + '.' + key;
+            const item = document.createElement('li');
+            item.className = 'nav-item';
+            const anchor = this.makeLink(path, key);
+            anchor.className = 'nav-link';
+            if (path === this.activeFQXN) {
+                anchor.classList.add('active');
+                anchor.setAttribute('aria-current', 'page');
+            }
+            item.appendChild(anchor);
+            menu.appendChild(item);
+        });
+    }
+    updatePage(recordHistory = true) {
+        this.updateNavMenu();
+        this.updateBreadcrumb();
+        this.updateContent();
+        Prism.highlightAll();
+        if (recordHistory) {
+            const hash = this.activeFQXN === 'Modules' ? '' : '#' + this.activeFQXN.slice(8);
+            if (window.location.hash !== hash) {
+                history.pushState({ activeFQXN: this.activeFQXN }, '', window.location.pathname + window.location.search + hash);
+            }
+        }
+    }
+}
+
+
+    function bootDox() {
+        const oDox = new Dox();
+        oDox.updatePage(false);
+    }
+
+    if (window.Prism) {
+        bootDox();
+    } else {
+        window.addEventListener('load', bootDox);
+    }
+    </script>
+</body>
+</html>

@@ -7,6 +7,14 @@ return function(sObject, D, hDC)
     local nWidth        = _nCardWidth;
     local nHeight       = _nCardHeight;
 
+    --Choice scenes already include their opposite-facing Yes and No labels
+    if (tRow.Type == "Choice") then
+        local pImages = _pCardSet.."/Images";
+        Forge.DrawImage(pImages.."/Choice/"..tRow.Name..".png", 0, 0, nWidth, nHeight);
+        Forge.DrawImage(pImages.."/Components/Frame Choice.png", 0, 0, nWidth, nHeight);
+        return;
+    end
+
     --the Clockwork interval tracker is already a complete illustrated card
     if (tRow.Type == "Interval") then
         local nScale       = math.min(nWidth / 1049, nHeight / 1500);
@@ -26,8 +34,8 @@ return function(sObject, D, hDC)
             nWidth * 0.50000000, nHeight * 0.44044444,
             nWidth * 0.79393939, nHeight * 0.36711111);
         Forge.DrawImage(pImages.."/Components/Frame Almanac.png", 0, 0, nWidth, nHeight);
-        Forge.DrawTextCurved("ALMANACNAME", nWidth / 2, nHeight * 0.10222222,
-            "Day of the", nWidth * 0.72727273);
+        Forge.DrawTextCurved("ALMANACNAME", nWidth / 2, nHeight * 0.083,
+            "day of the", nWidth * 0.72727273);
         Forge.DrawText("ALMANACNAMELARGE", nWidth / 2, nHeight * 0.19555556, sCreature, true, true);
         return;
     end

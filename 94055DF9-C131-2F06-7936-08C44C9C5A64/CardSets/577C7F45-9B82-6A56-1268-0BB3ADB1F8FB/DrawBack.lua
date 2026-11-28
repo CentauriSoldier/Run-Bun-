@@ -8,6 +8,14 @@ return function(sObject, D, hDC)
     local sDeck         = _tRow.Deck;
     local pComponents   = _pCardSet.."/Images/Components";
 
+    --Choice uses the user-composed symmetric interior and its separate frame
+    if (sDeck == "Choice") then
+        Forge.DrawRectangle(0, 0, nWidth, nHeight, 0x000000FF);
+        Forge.DrawImage(pComponents.."/Back Choice.png", 0, 0, nWidth, nHeight);
+        Forge.DrawImage(pComponents.."/Back Border Choice.png", 0, 0, nWidth, nHeight);
+        return;
+    end
+
     --Almanac and Clockwork keep their interiors and branded border as separate layers
     if (sDeck == "Almanac" or sDeck == "Clockwork") then
         Forge.DrawRectangle(0, 0, nWidth, nHeight, 0x000000FF);

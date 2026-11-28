@@ -1,26 +1,26 @@
-Run Bun! — Almanac day cards still to build
+Run Bun! — Almanac day-card artwork production status
 
-19 remaining of 23 approved concepts. Bun, Dog, Dragon and Reaper artwork is installed.
-These names are concepts, not authored effects or flavor text. This list does not authorize generation of the remaining cards.
+0 remaining of 23 approved concepts. Completed artwork is marked below; Bun, Dog, Dragon and Reaper were installed previously.
+All 23 approved concepts now have installed artwork. Names are concepts, not authored effects or flavor text. This completed art batch did not add CSV rows; existing rows were left untouched.
 
-Day of the Jackalope
-Day of the Wolf
-Day of the Gryphon
-Day of the Moonhare
-Day of the Hellhound
-Day of the Clockwork Hare
-Day of the Hart
-Day of the Wyvern
-Day of the Basilisk
-Day of the Chimera
-Day of the Gargoyle
-Day of the Ram
-Day of the Raven
-Day of the Fox
-Day of the Owl
-Day of the Kraken
-Day of the Briar Beast
-Day of the Leviathan
-Day of the Kirin
+Day of the Jackalope — ART COMPLETE; CSV not added in this art-only step.
+Day of the Wolf — ART COMPLETE; CSV not added in this art-only step.
+Day of the Gryphon — ART COMPLETE; CSV not added in this art-only step.
+Day of the Moonhare — ART COMPLETE; CSV not added in this art-only step.
+Day of the Hellhound — ART COMPLETE; CSV not added in this art-only step.
+Day of the Clockwork Hare — ART COMPLETE; CSV not added in this art-only step.
+Day of the Hart — ART COMPLETE; CSV not added in this art-only step.
+Day of the Wyvern — ART COMPLETE; CSV not added in this art-only step.
+Day of the Basilisk — ART COMPLETE; CSV not added in this art-only step.
+Day of the Chimera — ART COMPLETE; CSV not added in this art-only step.
+Day of the Gargoyle — ART COMPLETE; CSV not added in this art-only step.
+Day of the Ram — ART COMPLETE; CSV not added in this art-only step.
+Day of the Raven — ART COMPLETE; CSV not added in this art-only step.
+Day of the Fox — ART COMPLETE; CSV not added in this art-only step.
+Day of the Owl — ART COMPLETE; CSV not added in this art-only step.
+Day of the Kraken — ART COMPLETE; CSV not added in this art-only step.
+Day of the Briar Beast — ART COMPLETE; CSV not added in this art-only step.
+Day of the Leviathan — ART COMPLETE; CSV not added in this art-only step.
+Day of the Kirin — ART COMPLETE; CSV not added in this art-only step.
 
 Interval is a Clockwork utility card conceptually, not one of these 23 days. Its CSV membership and front/back rendering now use Clockwork.
